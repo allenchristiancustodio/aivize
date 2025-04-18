@@ -19,17 +19,22 @@ const GenerateProgramPage = () => {
 
   const messageContainerRef = useRef<HTMLDivElement>(null);
 
-  // SOLUTION to get rid of "Meeting has ended" error
+  // Enhanced error handling for "Meeting has ended" error
   useEffect(() => {
     const originalError = console.error;
-    // override console.error to ignore "Meeting has ended" errors
+    // override console.error to handle "Meeting has ended" errors
     console.error = function (msg, ...args) {
       if (
         msg &&
         (msg.includes("Meeting has ended") ||
           (args[0] && args[0].toString().includes("Meeting has ended")))
       ) {
-        console.log("Ignoring known error: Meeting has ended");
+        console.log(
+          "Meeting has ended. Attempting to reconnect or notify user."
+        );
+        // Attempt to reconnect or notify the user
+        setCallEnded(true); // Example: Set callEnded to true to trigger redirect or other UI changes
+        // Optionally, implement retry logic here
         return; // don't pass to original handler
       }
 
@@ -209,7 +214,9 @@ const GenerateProgramPage = () => {
                 </div>
               </div>
 
-              <h2 className="text-xl font-bold text-foreground">Aivizer</h2>
+              <h2 className="text-xl font-bold text-foreground">
+                Jeffry Palagan
+              </h2>
               <p className="text-sm text-muted-foreground mt-1">
                 Fitness & Diet Coach
               </p>
@@ -283,7 +290,7 @@ const GenerateProgramPage = () => {
               {messages.map((msg, index) => (
                 <div key={index} className="message-item animate-fadeIn">
                   <div className="font-semibold text-xs text-muted-foreground mb-1">
-                    {msg.role === "assistant" ? "CodeFlex AI" : "You"}:
+                    {msg.role === "assistant" ? "Jeffry Palagan" : "You"}:
                   </div>
                   <p className="text-foreground">{msg.content}</p>
                 </div>
