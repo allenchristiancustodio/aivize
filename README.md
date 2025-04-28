@@ -1,4 +1,6 @@
 🧠 Aivize
+
+####
 Aivize is your personal AI-powered assistant for creating customized diet and workout plans.
 Built with cutting-edge technologies to help you achieve your fitness goals faster and smarter.
 
