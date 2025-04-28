@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🧠 Aivize
+Aivize is your personal AI-powered assistant for creating customized diet and workout plans.
+Built with cutting-edge technologies to help you achieve your fitness goals faster and smarter.
 
-## Getting Started
+🚀 Tech Stack
+Frontend: Next.js, TailwindCSS, ShadCN
 
-First, run the development server:
+Backend: Express, Convex
 
-```bash
+Authentication: Clerk
+
+AI Models: Gemini, Vapi
+
+✨ Features
+🥗 Personalized Diet Plans
+
+🏋️ Tailored Workout Programs
+
+🤖 AI-driven Recommendations
+
+🔒 Secure User Authentication (Clerk)
+
+📈 Real-Time Data Handling (Convex)
+
+🎤 Voice Interactions (Vapi Integration)
+
+📸 Screenshots
+(Add screenshots or demos here)
+
+📦 Installation
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/aivize.git
+cd aivize
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Create your .env file and set up the following:
+
+bash
+Copy
+Edit
+# Example environment variables
+NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_frontend_api
+CLERK_SECRET_KEY=your_clerk_secret_key
+CONVEX_DEPLOYMENT_URL=your_convex_url
+VAPI_API_KEY=your_vapi_key
+GEMINI_API_KEY=your_gemini_key
+Run the development server:
+
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit http://localhost:3000 to see Aivize in action!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🛠️ Future Plans
+Add more AI personalization features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Integrate fitness tracking with wearables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Social features: Share plans with friends
 
-## Learn More
+Progress tracking dashboards
 
-To learn more about Next.js, take a look at the following resources:
+🤝 Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📝 License
+This project is licensed under the MIT License.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Let me know if you also want a fancier version with badges (e.g., "Made with Next.js" badges) or a short tagline to add on top! 🚀
+Would you also like me to help you create a simple project logo/banner for Aivize? 🎨
